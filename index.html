@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <title>My Wish Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap" 
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- Social-icons -->
+    <svg style="display: none;">
+
+        <symbol id="facebook" viewBox="0 0 430.113 430.114">
+            <g>
+                <path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+                    c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+                    c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+            </g>
+        </symbol>
+
+        <symbol id="instagram" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+                        C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+                        h192c61.76,0,112,50.24,112,112V352z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+                        c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <circle cx="393.6" cy="118.4" r="17.056"/>
+                </g>
+            </g>
+        </symbol>
+
+    </svg>
+
+    <!-- Social-icons -->
+  <header class="top">
+    <div class="top-wrapper">
+      <!-- <div class="logo-wrapper">
+          <a
+            href="https://goiteens.ua/"
+            class="logo-link"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            <img
+              src="./images/logo.png"
+              alt="logo GoIT"
+              width="200"
+              height="52"
+            />
+          </a>
+        </div> -->
+        <div class="social">
+            <a class="social__item" href="https://www.facebook.com/ivanator777/" target="_blank">
+                <svg class="social__icon">
+                    <use xlink:href="#facebook"></use>
+                </svg>
+            </a>
+            <a class="social__item" href="https://www.instagram.com/ivan_kozlov.ik/" target="_blank">
+                <svg class="social__icon">
+                    <use xlink:href="#instagram"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="user-wrapper">
+          <div class="user-photo-wrapper">
+            <img class="user-photo" src="" alt="" width="44" height="44" />
+          </div>
+          <div class="user-name-wrapper">
+            <h1 class="user-name"></h1>
+            <h2 class="user-job"><span></span></h2>
+          </div>
+          <!-- <div class="qr-code-wrapper">
+            <img
+              class="qr-code"
+              src=""
+              alt="КР код до моєї сторінки"
+              width="70"
+              height="70"
+            />
+          </div> -->
+        </div>
+
+        <div class="social" id="proffesional">
+            <a class="social__item" href="https://github.com/VanichkaKozlov" target="_blank">
+              <svg class="social__icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" ><path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" fill="#ffff"/></svg>
+            </a>
+            <a class="social__item" href="https://app.netlify.com/teams/ivan53135/sites" target="_blank">
+              <svg class="social__icon" width="256px" height="256px" viewBox="0 0 256 256" version="1.1">
+                <g>
+                    <path d="M153.094392,165.678589 L90.3094111,152.558384 C90.0414069,153.070392 89.7534024,153.566399 89.4333974,154.034407 L146.59029,237.41171 L150.038344,233.967656 L159.762496,173.498711 C156.454445,172.110689 153.966406,169.210644 153.094392,165.678589 L153.094392,165.678589 Z M130.190034,83.6053063 C127.837997,87.2133627 123.777934,89.6014 119.153862,89.6014 C118.441851,89.6014 117.74984,89.5293989 117.069829,89.4213972 L88.4373818,134.222097 L164.934577,101.301583 C164.910577,100.993578 164.842576,100.705574 164.842576,100.389569 C164.842576,99.7455585 164.930577,99.1215488 165.034579,98.5055391 L130.190034,83.6053063 L130.190034,83.6053063 Z M132.270067,75.4411788 L169.334646,91.2894264 C170.506664,90.3734121 171.842685,89.6934015 173.310708,89.281395 L179.402803,51.4008031 L156.194441,28.1924405 L130.070032,69.0690792 C131.322052,70.9171081 132.098064,73.0931421 132.270067,75.4411788 L132.270067,75.4411788 Z M209.93528,81.9332802 L186.674917,58.6689167 L181.618838,90.0774075 C182.906858,90.7294176 184.054876,91.5974312 185.014891,92.6614478 L209.93528,81.9332802 L209.93528,81.9332802 Z M154.206409,157.406459 C156.018438,154.130408 159.36249,151.866373 163.294551,151.562368 L169.974656,110.013719 C169.450648,109.665714 168.98264,109.249707 168.522633,108.8217 L91.585431,141.934218 C91.7814341,142.73823 91.9174362,143.558243 91.9814372,144.410256 L154.206409,157.406459 L154.206409,157.406459 Z M216.271379,88.2733793 L189.358959,99.8535602 L255.759996,128.242004 L256,128.002 L216.271379,88.2733793 L216.271379,88.2733793 Z M168.178628,173.622713 L160.090501,223.907499 L207.055235,176.942765 L173.226707,169.878654 C171.934686,171.562681 170.202659,172.866701 168.178628,173.622713 L168.178628,173.622713 Z M76.8932015,160.694511 C75.1931749,160.694511 73.5651495,160.402506 72.0411256,159.886498 L56.4408819,184.29888 L50.4127877,178.274786 L65.1890186,155.154424 C64.8210128,154.702417 64.4850076,154.22641 64.1690026,153.738402 L37.4005844,165.262582 L31.0564853,158.918483 L60.3569431,146.306286 L7.38411538,135.250113 L0.140002188,128.002 L2.432038,125.709964 L63.5169925,138.462163 C64.2250035,137.126143 65.1250176,135.898123 66.1850341,134.846107 L36.5365709,91.6014313 L42.5246644,85.6133377 L73.5011485,130.798044 C74.5931655,130.55004 75.7251832,130.402038 76.8932015,130.402038 C78.2012219,130.402038 79.4692417,130.58604 80.6812606,130.898045 L109.665714,85.5453366 C107.393678,83.1772996 105.989656,79.9692495 105.989656,76.4291942 C105.989656,75.389178 106.121658,74.3811622 106.349662,73.4131471 L70.1890967,57.9529055 L76.5331958,51.6088064 L110.793731,66.2610353 C113.069767,64.3890061 115.981812,63.2649885 119.157862,63.2649885 C120.657885,63.2649885 122.097908,63.5289926 123.445929,63.9929999 L150.170346,22.1683464 L128.002,0 L0,128.002 L128.002,256.004 L140.598197,243.407803 L83.0132971,159.398491 C81.1372678,160.226504 79.0692355,160.694511 76.8932015,160.694511 L76.8932015,160.694511 Z M178.122783,111.805747 L171.326677,154.042407 C173.666714,155.930436 175.226738,158.69448 175.522743,161.854529 L214.095345,169.906655 L249.415897,134.586103 L185.662901,107.329677 C183.874873,109.705714 181.202831,111.35374 178.122783,111.805747 L178.122783,111.805747 Z" fill="#ffff"></path>
+                </g>
+            </svg>
+            </a>
+        </div>
+    </div>
+  </header>
+    <div class="container">
+      <main>
+        <h2 class="title"> Map of My <span class="title_typed"></span><span class="cursor">&nbsp;</span></h2>
+        <section class="box dream">
+          <div class="cards dreams"></div>
+        </section>
+        <section class="box amount">
+          <h3 class="box-title">Для цього я зароблю</h3>
+          <div class="cards">
+            <figure class="card amount-1 download">
+              <div class="card-img-wrapper">
+                <ul class="plot plot-1"></ul>
+                
+              </div>
+              <figcaption class="card-description">
+                <p>Середній заробіток по роках</p>
+              </figcaption>
+            </figure>
+            <figure class="card amount-2 download">
+              <div class="card-img-wrapper">
+                <ul class="plot plot-2"></ul>
+              </div>
+              <figcaption class="card-description">
+                <p>Можливість відкладати з заробітку по роках</p>
+              </figcaption>
+            </figure>
+            <div class="card amount-3">
+                <p class="accumulator card-description"></p>
+            </div>
+          </div>
+        </section>
+        <section class="box todo">
+          <h3 class="box-title">In order to make my dreams come true, <br> I will work on:</h3>
+          <ul class="list"></ul>
+        </section>
+      </main>
+    </div>
+
+    <div class="copyright">
+        <div class="copyright__text">
+          <h4>Copyright © 2020 IK Corporation. All Rights Reserved</h4>
+          <h5>Created with love <a href="https://ik-portfolio.netlify.app/">by Ivan Kozlov</a> </h5>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
